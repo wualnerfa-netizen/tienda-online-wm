@@ -3,60 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WM | Tienda Online</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <title>WM | La actitud también se viste</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-black shadow-sm">
+    <div class="container">
 
-    <!-- HEADER -->
-    <header class="header">
+        <a class="navbar-brand fw-bold" href="index.html">
+    WM 🧢
+    <div style="font-size:12px; color:#ccc; font-weight:400;">
+        Accesorios urbanos inspirados en la cultura noventera.
+    </div>
+        </a>
 
-        <div class="logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#menu">
 
-            <h1>WM 🧢</h1>
+            <span class="navbar-toggler-icon"></span>
 
-            <p>La actitud también se viste.</p>
+        </button>
 
-        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="menu">
 
-        <nav>
+            <ul class="navbar-nav">
 
-            <ul class="menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
 
-                <li><a href="index.html">Inicio</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
 
-                <li><a href="#">Nosotros</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Productos</a>
+                </li>
 
-                <li><a href="productos.html">Productos</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
 
-                <li><a href="#">Servicios</a></li>
-
-                <li><a href="#">Contacto</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
 
             </ul>
 
-        </nav>
+        </div>
 
-    </header>
+    </div>
 
-    <!-- CONTENIDO PRINCIPAL -->
+</nav>
+<main>
 
-    <main>
+   <section class="banner" data-aos="fade-up">
 
-        <section class="banner">
+    <div class="container">
 
-            <h2>LA ACTITUD TAMBIÉN SE VISTE</h2>
+        <div class="banner-contenido" data-aos="fade-up">
+
+            <h2>
+
+                LA CALLE CAMBIA.<br>
+                TU ESTILO PERMANECE.
+
+            </h2>
 
             <p>
-                Descubre accesorios masculinos inspirados en la cultura urbana,
-                el estilo peruano y la personalidad de quienes buscan marcar la diferencia.
+
+                Inspirados en la cultura noventera.<br>
+                Hechos para destacar hoy.
+
             </p>
 
-            <a href="productos.html" class="boton">Ver productos</a>
+            <a href="productos.html" class="boton">
 
-        </section>
+                MIRA LO QUE HAY PARA TI
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
         <section class="presentacion">
 
@@ -81,7 +131,10 @@
 
                 <article>
 
-                    <h3>🧢 Gorras</h3>
+                    <h3 class="titulo-producto">
+    <span>🧢</span>
+    <span>Gorras</span>
+</h3>
 
                     <p>Modelos urbanos para cualquier ocasión.</p>
 
@@ -116,6 +169,14 @@
         <p>© 2026 WM | Hecho con actitud en Perú.</p>
 
     </footer>
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
 </body>
 </html>

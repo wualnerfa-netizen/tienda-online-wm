@@ -4,127 +4,151 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>WM | Productos</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
 
 </head>
 
 <body>
 
-    <!-- HEADER -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black shadow-sm">
+    <div class="container">
 
-    <header class="header">
+        <a class="navbar-brand fw-bold" href="index.html">
+            🧢 WM
+        </a>
 
-        <div class="logo">
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
 
-            <h1>WM 🧢</h1>
+            <span class="navbar-toggler-icon"></span>
 
-            <p>La actitud también se viste.</p>
+        </button>
 
-        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="menu">
 
-        <nav>
+            <ul class="navbar-nav">
 
-            <ul class="menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
 
-                <li><a href="index.html">Inicio</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
 
-                <li><a href="#">Nosotros</a></li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="productos.html">Productos</a>
+                </li>
 
-                <li><a href="productos.html">Productos</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
 
-                <li><a href="#">Servicios</a></li>
-
-                <li><a href="#">Contacto</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
 
             </ul>
 
-        </nav>
+        </div>
 
-    </header>
+    </div>
+</nav>
 
-    <!-- CONTENIDO -->
+<main>
 
-    <main>
+<section class="destacados">
 
-        <section class="destacados">
+<h2>Nuestros Productos</h2>
 
-            <h2>Nuestros Productos</h2>
+<div class="productos">
 
-            <div class="productos">
+<article>
 
-                <article>
+<h3><span>🧢</span> Gorras</h3>
 
-                    <h3>🧢 Gorras</h3>
+<p>Modelos urbanos para jóvenes y adultos.</p>
 
-                    <p>Modelos urbanos para jóvenes y adultos.</p>
+</article>
 
-                </article>
+<article>
 
-                <article>
+<h3><i class="fa-regular fa-clock"></i> Relojes</h3>
 
-                    <h3>⌚ Relojes</h3>
+<p>Diseños modernos para cualquier ocasión.</p>
 
-                    <p>Diseños modernos para cualquier ocasión.</p>
+</article>
 
-                </article>
+<article>
 
-                <article>
+<h3><i class="fa-solid fa-glasses"></i> Lentes</h3>
 
-                    <h3>🕶 Lentes</h3>
+<p>Protección y estilo en un solo accesorio.</p>
 
-                    <p>Protección y estilo en un solo accesorio.</p>
+</article>
 
-                </article>
+</div>
 
-            </div>
+<br><br>
 
-            <br><br>
+<div class="productos">
 
-            <div class="productos">
+<article>
 
-                <article>
+<h3><i class="fa-regular fa-gem"></i> Joyería</h3>
 
-                    <h3>💍 Joyería</h3>
+<p>Cadenas, pulseras y anillos con personalidad.</p>
 
-                    <p>Cadenas, pulseras y anillos con personalidad.</p>
+</article>
 
-                </article>
+<article>
 
-                <article>
+<h3><i class="fa-solid fa-spray-can-sparkles"></i> Perfumes</h3>
 
-                    <h3>🧴 Perfumes</h3>
+<p>Fragancias para destacar en cualquier momento.</p>
 
-                    <p>Fragancias para destacar en cualquier momento.</p>
+</article>
 
-                </article>
+<article>
 
-                <article>
+<h3><i class="fa-solid fa-pump-soap"></i> Cuidado Personal</h3>
 
-                    <h3>🧔 Cuidado Personal</h3>
+<p>Productos para mantener una imagen impecable.</p>
 
-                    <p>Productos para mantener una imagen impecable.</p>
+</article>
 
-                </article>
+</div>
 
-            </div>
+</section>
 
-        </section>
+</main>
 
-    </main>
+<footer>
 
-    <!-- FOOTER -->
+<p>© 2026 WM | Hecho con actitud en Perú.</p>
 
-    <footer>
+</footer>
 
-        <p>© 2026 WM | Hecho con actitud en Perú.</p>
-
-    </footer>
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
 </html>

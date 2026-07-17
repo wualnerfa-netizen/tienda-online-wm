@@ -1,3 +1,7 @@
+/* ==========================
+   WM - STYLE.CSS
+   ========================== */
+
 /* VARIABLES */
 
 :root{
@@ -7,7 +11,7 @@
     --blanco:#ffffff;
 }
 
-/* GENERAL */
+/* RESET */
 
 *{
     margin:0;
@@ -15,139 +19,276 @@
     box-sizing:border-box;
 }
 
+/* GENERAL */
+
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Poppins', sans-serif;
     background-color:var(--negro);
     color:var(--blanco);
 }
 
-/* HEADER */
+/* ==========================
+   NAVBAR
+   ========================== */
 
-.header{
-    background-color:#000;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 50px;
+.navbar{
+
+    background:#000 !important;
+
 }
 
-.logo h1{
-    color:var(--dorado);
-    font-size:36px;
-}
+.navbar-brand{
 
-.logo p{
-    font-size:14px;
-    color:#cccccc;
-    margin-top:5px;
-}
+    color:var(--dorado) !important;
 
-/* MENÚ */
+    font-size:2rem;
 
-.menu{
-    display:flex;
-    list-style:none;
-}
-
-.menu li{
-    margin-left:30px;
-}
-
-.menu a{
-    text-decoration:none;
-    color:white;
     font-weight:bold;
-    transition:0.3s;
+
 }
 
-.menu a:hover{
-    color:var(--dorado);
+.nav-link{
+
+    color:white !important;
+
+    margin-left:15px;
+
+    transition:.3s;
+
 }
 
-/* BANNER */
+.nav-link:hover{
+
+    color:var(--dorado) !important;
+
+}
+
+/* ==========================
+   BANNER
+   ========================== */
 
 .banner{
-    text-align:center;
-    padding:100px 40px;
-    background-color:var(--gris);
+
+    background:
+    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+    url("../img/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+
+    display: flex;
+    align-items: center;
+
+    text-align: left;
+
+    color: white;
+
 }
 
 .banner h2{
-    font-size:42px;
+
     color:var(--dorado);
+
+    font-size:3rem;
+
     margin-bottom:20px;
+
 }
 
 .banner p{
+
     max-width:700px;
+
     margin:auto;
-    line-height:1.6;
+
+    line-height:1.8;
+
+    font-size:18px;
+
 }
 
-/* BOTÓN */
+/* ==========================
+   BOTÓN
+   ========================== */
 
 .boton{
+
     display:inline-block;
-    margin-top:30px;
-    padding:15px 35px;
+
+    margin-top:35px;
+
+    padding:15px 40px;
+
     background:var(--dorado);
+
     color:black;
+
     text-decoration:none;
-    border-radius:5px;
+
+    border-radius:50px;
+
     font-weight:bold;
+
+    transition:.3s;
+
 }
 
 .boton:hover{
+
     background:white;
+
+    color:black;
+
 }
 
-/* PRESENTACIÓN */
+/* ==========================
+   PRESENTACIÓN
+   ========================== */
 
 .presentacion{
-    padding:60px;
+
+    padding:70px 40px;
+
     text-align:center;
+
 }
 
 .presentacion h2{
+
     color:var(--dorado);
+
     margin-bottom:20px;
+
 }
 
-/* PRODUCTOS */
+.presentacion p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+/* ==========================
+   PRODUCTOS
+   ========================== */
 
 .destacados{
-    padding:60px;
+
+    padding:70px 40px;
+
 }
 
 .destacados h2{
+
     text-align:center;
+
     color:var(--dorado);
-    margin-bottom:40px;
+
+    margin-bottom:50px;
+
 }
 
 .productos{
+
     display:flex;
+
     justify-content:center;
+
     gap:30px;
+
+    flex-wrap:wrap;
+
 }
 
 .productos article{
+
     background:#222;
+
     padding:30px;
-    width:250px;
-    border-radius:10px;
+
+    width:260px;
+
+    border-radius:15px;
+
     text-align:center;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+}
+
+.productos article:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.4);
+
 }
 
 .productos h3{
-    margin-bottom:15px;
+
+    color: var(--dorado);
+
+    margin-bottom: 15px;
+
+    font-family: "Poppins","Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif;
+
 }
 
-/* FOOTER */
+/* ==========================
+   FOOTER
+   ========================== */
 
 footer{
-    background:black;
+
+    background:#000;
+
     text-align:center;
-    padding:25px;
-    margin-top:60px;
+
+    padding:30px;
+
+    margin-top:70px;
+
+}
+/* ==========================
+   HERO
+   ========================== */
+
+.banner-contenido{
+
+    max-width:600px;
+
+}
+
+.banner-contenido h2{
+
+    font-size:4.8rem;
+
+    color:var(--dorado);
+
+    line-height:1.05;
+
+    font-weight:700;
+
+}
+
+.banner-contenido p{
+
+    margin:30px 0;
+
+    font-size:1.4rem;
+
+    line-height:1.7;
+
+}
+.titulo-producto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
